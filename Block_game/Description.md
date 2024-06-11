@@ -1,4 +1,5 @@
 **THE BLOCK GAME**
+
 This is the block game. This game consists of a boards of blocks. Each block is either a solid color block
 or it is divided into four smaller blocks. You can play alone or against friends up to 4. You get to choose
 how many turns each player gets. The points are counted after all turns are used.
