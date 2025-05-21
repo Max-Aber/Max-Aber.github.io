@@ -273,30 +273,28 @@
               <div class="mb-4">
                 <h3>Valet Simulator</h3>
                 <p>
-                  The birthday paradox is the counterintuitive idea that the probability
-                  of at least 2 people having the same birthday in a group of 23, is 50%.
-
+                  The Valet Parking Simulator models the real world challenge of efficiently assigning arriving cars of
+                  varying sizes and priorities to limited parking spots. In a mixed size lot, small vehicles occupy the
+                  smallest available spots, VIPs receive priority spaces, and EVs park at charger equipped stalls while
+                  minimizing driver walking distance.
                 </p>
                 <p>
-                  This project helps us simulate and visualize the Birthday
-                  Paradox by running a series of experiments to test the probability
-                  of shared birthdays in groups of different sizes. The program runs
-                  multiple trials for each group size and calculates the percentage of
-                  trials where 2 or more people had the same birthday. The results are shown
-                  in a clear table format, showing group size and percentage.</p>
-                <p>In this project my primary contributions where in the Birthday
-                  and the Trial class. I worked on getting Birthday to generate random
-                  valid birthdays and on optimizing the birthday comparison logic to
-                  accurately check for duplicated birthdays. I also contributed to the writing
-                  of unit tests to ensure accuracy and reliability. Tested Birthday with date
-                  generation and edge cases, also Trial and Experiment with correctly identifying
-                  duplicates and handling varying group sizes.
+                  This project automates the entire parking process. It reads arrival and departure commands from three
+                  interchangeable input sources: console prompts, random generation, or a CSV file. Each command is
+                  parsed into a Move object, and a configurable assignment strategy selects the best ParkingSpot. The
+                  lot layout itself loads from a CSV so you can model any combination of spot sizes, EV chargers, and
+                  VIP reserves. After processing all moves, the simulator displays a status report showing which spots
+                  are free or occupied.</p>
+                <p>My primary contributions centered on developing the Simulator class and building the InputTechnique
+                  implementations. I designed and implemented the console-based UserInput, the RandomInput generator,
+                  and the FileInput CSV reader, then integrated them into the Simulator’s orchestration loop. I also
+                  collaborated on wiring in the MoveParser and VehicleFactory so that raw commands seamlessly become
+                  typed Vehicle objects, and ensured the core loop correctly drives Valet and ParkingLot interactions.
                 </p>
-                <p>In this project I practiced object-oriented programming using clean code
-                  principles like single responsibility. I deepend my understanding of random
-                  generation and data validating. Gained experience writing test and mocking
-                  objects using Mockito. This project provided experience with clean code
-                  theory and on how to write robust programs.</p>
+                <p>Through this project I deepened my understanding of object oriented design, applying SOLID principles,
+                  the Strategy and Factory patterns, and clear SRP. I gained hands on experience with console and file
+                  IO parsing, writing robust unit tests for I O heavy classes, and controlling an integrated system.
+                  This work sharpened my skills in designing extensible and maintainable software.</p>
               </div>
             </div>
           </div>
